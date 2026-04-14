@@ -24,6 +24,7 @@ python main.py --archivo data/noticias_crudas.txt
 ```
 
 El argumento `--archivo` es obligatorio e indica la ruta del archivo a procesar.
+El argumento `--salida` es optativo e indica eltipo salida: default json.
 
 ## Formato de entrada
 

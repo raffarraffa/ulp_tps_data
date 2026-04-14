@@ -1,1 +1,6 @@
 /tp_06/.vscode
+/tp_06/libs/__pycache__
+/tp_06/__pycache__
+/tp_06/logs
+*.7z
+/tp_06/output

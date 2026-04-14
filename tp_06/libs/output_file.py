@@ -33,7 +33,7 @@ def output_file(data, file_name="out", type_file="json"):
                 type_file_use="txt"
             case _:
                 type_file_use="json"       
-        file_name = f"output/{file_name}_{now}..{type_file_use}"
+        file_name = f"output/{file_name}_{now}.{type_file_use}"
         match type_file:
             case "json":
                 with open(file_name, "a", encoding="utf-8") as file:

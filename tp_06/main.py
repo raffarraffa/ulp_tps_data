@@ -6,29 +6,36 @@ from libs.output_file import output_file
 
 
 def main():
-    """
-    Programa principal del pipeline.
 
-    Utiliza argparse para leer el nombre del archivo a procesar desde la linea de comandos.
-    Configura el logging para escribir en un archivo.
-    Lee el archivo de texto y lo parsea en una lista de noticias.
-    Parsea la lista de noticias en una lista de noticias parseadas.
-    Guarda la lista de noticias parseadas en un archivo.
-    Escribir en el archivo de log el inicio y fin del programa.
     """
+    Punto de entrada del programa.
+    
+    Se encarga de leer los argumentos de la linea de comandos y ejecutar la pipeline de proceso de un archivo de texto.
+    
+    Parameters
+    ----------
+    None
+    
+    Returns
+    -------
+    None
+    """
+    
     setup_logging()
     logging.info(f"Inicio del programa")
     parser = argparse.ArgumentParser()
     parser.add_argument("--archivo", type=str, required=True, help="Ruta del archivo a procesar")
+    parser.add_argument("--salida", type=str, required=False, default="json", help="Tipo salida")
     args = parser.parse_args()
-    file_path_name=args.archivo
+    file_path_name = args.archivo
+    file_salida = args.salida
     type_file=file_path_name.split(".")[-1]
     match type_file:
         case "txt":
             contenido = ingesta_txt(file_path_name)
             noticias = parse_txt(contenido)
             noticias_parseadas = parse_noticias(noticias)
-            output_file(noticias_parseadas, "pipeline", "lista")
+            output_file(data=noticias_parseadas,file_name="pipeline",type_file=file_salida)
             
         case "json":
             raise ValueError(f"en poceso: {type_file}")            
