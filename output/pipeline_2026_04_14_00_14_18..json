@@ -1,0 +1,62 @@
+[
+    {
+        "titulo": "Nueva IA revoluciona la industria",
+        "link": "https://tech.com/ia",
+        "fecha": "2024-05-10",
+        "categoria": "Tecnologia"
+    },
+    {
+        "titulo": "Economia en alza",
+        "link": "economia.com",
+        "fecha": "10/05/2024",
+        "categoria": "economia"
+    },
+    {
+        "titulo": "Deportes hoy",
+        "link": "https://deportes.com",
+        "fecha": "2024/05/10",
+        "categoria": ""
+    },
+    {
+        "titulo": "Noticia sin link",
+        "link": "Fecha: 2024-05-10",
+        "fecha": "general",
+        "categoria": ""
+    },
+    {
+        "titulo": "URL con espacios",
+        "link": "https://espacios.com",
+        "fecha": "2024-05-12",
+        "categoria": "Sociedad"
+    },
+    {
+        "titulo": "Email en vez de URL",
+        "link": "contacto@site.com",
+        "fecha": "2024-05-12",
+        "categoria": "tecnologia"
+    },
+    {
+        "titulo": "Fecha inválida",
+        "link": "https://fecha.com",
+        "fecha": "32/13/2024",
+        "categoria": "ciencia"
+    },
+    {
+        "titulo": "Duplicado",
+        "link": "https://tech.com/ia",
+        "fecha": "2024-05-11",
+        "categoria": "tecnologia"
+    },
+    {
+        "titulo": "Titulo    con   espacios",
+        "link": "http://espaciado.com",
+        "fecha": "2024-05-09",
+        "categoria": "Cultura"
+    },
+    {
+        "titulo": "Sin categoria",
+        "link": "https://nocat.com",
+        "fecha": "2024-05-08",
+        "categoria": ""
+    }
+]
