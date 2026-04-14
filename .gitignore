@@ -4,3 +4,5 @@
 /tp_06/logs
 *.7z
 /tp_06/output
+tp_06/pipelines/__pycache__/ingesta_txt.cpython-314.pyc
+*.pyc
